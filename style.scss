@@ -1,6 +1,7 @@
 /* ==css 註解 ==*/
 // scss註解
-$fontSize : 16px; //number
+
+$fontSize : 13px; //number
 $color : #fff; // color 
 $fontFamily : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; //string
 $margin : 10px 10px 20px 5px; // list
@@ -13,6 +14,8 @@ $Mapcolor : (
 $block : null;
 
 body {
+ //$b : 10px; // 區域變數
+ //$c : 10px !global; // 全域變數
  font-size: $fontSize;
  font-family: $fontFamily ;
  font-weight: 400;
@@ -22,7 +25,35 @@ body {
 background-color: map-get($Mapcolor, 'yellow' );
 }
 
+$a : 20px;
+$a : 10px !default; // 改變它的層級
+  
+
 .wrapper {
+  
+  padding: $a;
   width: 1200px;
-  margin: 10px auto;
+ //margin: $c auto;
 }
+
+// class  宣告
+// #{變數}
+$class : boxer;
+$file : a1;
+$attr : margin;
+
+// class
+.#{$class} {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  background-image: url('images/#{$file}.jpg'); // url
+  #{$attr} : 10px // 屬性
+}
+
+
+h1 {font-size: round($fontSize * 4.4);}
+h2 {font-size: round($fontSize * 3.6);}
+h3 {font-size: round($fontSize * 2.8);}
+h4 {font-size: round($fontSize * 1.5);}
+h5 {font-size: round($fontSize * 1);}
