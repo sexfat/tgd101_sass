@@ -58,9 +58,36 @@ h5 {
 .index .section01 .area .btn {
   padding: 20px 30px;
   text-align: center;
+  background-color: #00ddf1;
   color: #fff;
   border-radius: 3px;
+  transition: all 0.3s ease;
   cursor: pointer;
+}
+.index .section01 .area .btn:hover {
+  background-color: #02a8b7;
+  transform: scale(1.2);
+}
+.index .section01 .area .btn::after {
+  content: "";
+}
+.index .section01 .area .btn::before {
+  content: "";
+}
+.index .section01 .area .btn--dark {
+  background-color: #333;
+}
+.index .section01 .area .btn--dark:hover {
+  background-color: #666;
+}
+.index .section01 .area .btn--white {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+.index .section01 .area .btn--white:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 .about section {
