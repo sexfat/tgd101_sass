@@ -1,0 +1,43 @@
+// 按鈕樣式
+    .btn {
+                padding: 20px 30px;
+                text-align: center;
+                background-color: rgb(0, 221, 241);
+                color: #fff;
+                border-radius: 3px;
+                transition: all .3s ease;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgb(2, 168, 183);
+                    transform: scale(1.2);
+                }
+
+                // 偽元素
+                &::after {
+                    content: '';
+                }
+
+                &::before {
+                    content: '';
+                }
+
+                &--dark {
+                    background-color: #333;
+
+                    &:hover {
+                        background-color: #666;
+                    }
+                }
+
+                &--white {
+                    background-color: #fff;
+                    border: 1px solid #333;
+                    color: #333;
+
+                    &:hover {
+                        background-color: #333;
+                        color: #fff;
+                    }
+                }
+            }
