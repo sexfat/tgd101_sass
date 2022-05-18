@@ -42,4 +42,33 @@ h5 {
   font-size: 13px;
 }
 
+.index .section01 {
+  width: 100%;
+  background-color: #ddd2d2;
+}
+.index .section01 h2 {
+  font-size: 34px;
+  color: #333;
+}
+.index .section01 .area {
+  width: 80%;
+  background-color: #fe7474;
+  margin: 0 auto;
+}
+.index .section01 .area .btn {
+  padding: 20px 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.about section {
+  width: 100%;
+}
+.about section h2 {
+  font-size: 40px;
+  color: #444;
+}
+
 /*# sourceMappingURL=style.css.map */
