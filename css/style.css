@@ -55,7 +55,8 @@ h5 {
   background-color: #fe7474;
   margin: 0 auto;
 }
-.index .section01 .area .btn {
+
+.btn {
   padding: 20px 30px;
   text-align: center;
   background-color: #00ddf1;
@@ -64,28 +65,28 @@ h5 {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.index .section01 .area .btn:hover {
+.btn:hover {
   background-color: #02a8b7;
   transform: scale(1.2);
 }
-.index .section01 .area .btn::after {
+.btn::after {
   content: "";
 }
-.index .section01 .area .btn::before {
+.btn::before {
   content: "";
 }
-.index .section01 .area .btn--dark {
+.btn--dark {
   background-color: #333;
 }
-.index .section01 .area .btn--dark:hover {
+.btn--dark:hover {
   background-color: #666;
 }
-.index .section01 .area .btn--white {
+.btn--white {
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
 }
-.index .section01 .area .btn--white:hover {
+.btn--white:hover {
   background-color: #333;
   color: #fff;
 }

@@ -92,7 +92,20 @@ h5 {
             background-color: rgb(254, 116, 116);
             margin: 0 auto;
 
-            .btn {
+        
+
+            // .btn:hover {
+            //     background-color: rgb(2, 168, 183);
+
+            // }
+        }
+    }
+
+}
+
+
+// 按鈕樣式
+    .btn {
                 padding: 20px 30px;
                 text-align: center;
                 background-color: rgb(0, 221, 241);
@@ -134,15 +147,6 @@ h5 {
                     }
                 }
             }
-
-            // .btn:hover {
-            //     background-color: rgb(2, 168, 183);
-
-            // }
-        }
-    }
-
-}
 
 // 關於我們 about.html
 .about {
