@@ -1,0 +1,28 @@
+/* ==css 註解 ==*/
+// scss註解
+$fontSize : 16px; //number
+$color : #fff; // color 
+$fontFamily : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ; //string
+$margin : 10px 10px 20px 5px; // list
+$Mapcolor : (
+ "key" : "val",
+ "blue" : #009dff,
+ "yellow" : #fbf300
+); // map
+
+$block : null;
+
+body {
+ font-size: $fontSize;
+ font-family: $fontFamily ;
+ font-weight: 400;
+ margin: $margin;
+ padding: $block ;
+ color: $color;
+background-color: map-get($Mapcolor, 'yellow' );
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 10px auto;
+}
