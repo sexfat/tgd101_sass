@@ -117,4 +117,10 @@ body {
   font-family: 'Courier New', Courier, monospace;
   font: 10px;
 }
+
+.num {
+  width: 100px;
+  height: 101px;
+  margin: 100px;
+}
 /*# sourceMappingURL=style.css.map */

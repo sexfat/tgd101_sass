@@ -54,3 +54,13 @@ $attr : margin;
   font : (100 / 10) + px; // 字體屬性除法 + ()
  }
 
+
+// 運算的函式
+.num {
+   width:  floor(100.5px);// 無條件捨去
+   height:  ceil(100.5px);// 無條件捨去
+   margin:  round(100.4px);// 四捨五入
+}
+
+
+
