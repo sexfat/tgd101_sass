@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -28,11 +29,33 @@
         <div class="btnOutline-secondary">secondary</div>
     </section>
     <section class="container-full">
-     <div class="box pushleft_90 pushtop_20"></div>
+     <div class="box mv01"></div>
+     <div class="box mv02"></div>
     </section>
 
 
+   <script>
+   var tl = gsap.timeline();
 
+    tl.to('.mv01' , {
+       x: 100,
+    }).to('.mv01' , {
+       y: 300,
+       ease : "elastic.out(1, 0.3)"
+    }).to('.mv01' , {
+        rotation : 360,
+        // repeat : -1,
+        ease : "none"
+    }).to('.mv02' , {
+        backgroundColor : '#f20',
+        delay : -0.4,
+        x: 300
+    })
+
+
+    
+   
+   </script>
 </body>
 
 </html>
