@@ -19,7 +19,7 @@
 // 如何使用: @include layout(數值)  判斷版型 100 滿版
 // 數值 : 1200px
 // @include layout(100)
-@mixin layout($layouts){
+@mixin layout($layouts) {
     @if $layouts==100 {
         width: 100%;
     }
@@ -51,14 +51,31 @@
         transition: all .2s ease;
 
         &:hover {
-            background-color: lighten($bgc , 20);
+            background-color: lighten($bgc, 20);
             color: invert($bgc);
             transform: scale(1.05);
         }
     }
 }
 
+@mixin btn-Outline($class , $w , $bgc) {
+    .btnOutline-#{$class} {
+        padding: $w $w*2;
+        text-align: center;
+        color: $bgc;
+        border: 1px solid $bgc;
+        border-radius: 5px;
+        transition: .3s all ease;
+        cursor: pointer;
+        &:hover {
+            background-color: $bgc;
+            color: #fff;
+            border: initial;
+        }
+    }
+}
 
-
+@include btn-Outline('default',0.4rem  , rgb(8, 131, 255) );
+@include btn-Outline('secondary',0.4rem  , rgb(87, 87, 87) );
 
 
