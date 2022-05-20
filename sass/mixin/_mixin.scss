@@ -66,12 +66,35 @@
         border: 1px solid $bgc;
         border-radius: 5px;
         transition: .3s all ease;
+        // display: inline;
         cursor: pointer;
         &:hover {
             background-color: $bgc;
             color: #fff;
             border: initial;
         }
+    }
+}
+
+
+// rwd
+
+// 共用的手機版斷點
+@mixin m() {
+    @media all and (max-width:$small) {
+        @content;
+    }
+}
+// 共用的平版斷點
+@mixin t() {
+    @media all and (max-width:$medium) {
+        @content;
+    }
+}
+// 客製化斷點
+@mixin c($breakpoint) {
+    @media all and (max-width:$breakpoint) {
+        @content;
     }
 }
 

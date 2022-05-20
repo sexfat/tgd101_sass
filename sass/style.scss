@@ -155,8 +155,46 @@ h1 {
 
 
 
-@include btn('btn_commom', 5px , green , 10px);
-@include btn('btn_large', 15px , rgb(0, 38, 250) , 3px);
+@include btn('btn_commom', 5px, green, 10px);
+@include btn('btn_large', 15px, rgb(0, 38, 250), 3px);
 
-@include btn-Outline('default',0.4rem  , rgb(8, 131, 255) );
-@include btn-Outline('secondary',0.4rem  , rgb(87, 87, 87) );
+@include btn-Outline('default', 0.4rem, rgb(8, 131, 255));
+@include btn-Outline('secondary', 0.4rem, rgb(87, 87, 87));
+
+
+
+
+.wrapper {
+    @include layout(1200);
+
+    @include t() {
+        @include layout(800);
+    }
+    @include m() {
+        @include layout(100);
+    }
+}
+
+@include m() {
+    .box {
+        @include rect(300px);
+        background-color: #333;
+    }
+}
+// 跟上面寫法兼容
+// .box {
+//   @include m() {
+//         @include rect(300px);
+//         background-color: #333;
+//     }
+// }
+
+
+@include c(1024px) {
+  .fontH1 {
+     font-size: 50px;
+  }
+  .fontH2 {
+     font-size: 40px;
+  }
+}

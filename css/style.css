@@ -302,4 +302,40 @@ h1 {
   color: #fff;
   border: initial;
 }
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+}
+
+@media all and (max-width: 720px) {
+  .wrapper {
+    width: 800px;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .box {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-color: #333;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .fontH1 {
+    font-size: 50px;
+  }
+  .fontH2 {
+    font-size: 40px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
