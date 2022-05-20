@@ -123,4 +123,19 @@ body {
   height: 101px;
   margin: 100px;
 }
+
+.color {
+  color: white;
+  background-color: #cccccc;
+}
+
+.button {
+  text-align: center;
+  padding: 10px 20px;
+  color: #640000;
+}
+
+.button:hover {
+  color: #ff3131;
+}
 /*# sourceMappingURL=style.css.map */
