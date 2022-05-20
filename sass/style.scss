@@ -47,41 +47,36 @@ $attr : margin;
 /* 運算 注意單位 */
 
 .cal {
-  width:  10px + 10; // 單位
-  height:  10px - 5; // 單位
-  margin:  10 * 10 + px; // 單位
-  font-family: 'Courier New', Courier, monospace;
-  font : (100 / 10) + px; // 字體屬性除法 + ()
- }
+    width: 10px + 10; // 單位
+    height: 10px - 5; // 單位
+    margin: 10 * 10 + px; // 單位
+    font-family: 'Courier New', Courier, monospace;
+    font: (100 / 10) + px; // 字體屬性除法 + ()
+}
 
 
 // 運算的函式
 .num {
-   width:  floor(100.5px);// 無條件捨去
-   height:  ceil(100.5px);// 無條件進位
-   margin:  round(100.4px);// 四捨五入
+    width: floor(100.5px); // 無條件捨去
+    height: ceil(100.5px); // 無條件進位
+    margin: round(100.4px); // 四捨五入
 }
 
 
 // 顏色函式
 .color {
-     color: lighten(#000000, 100);//顏色變淺 0 ~ 100
-     background-color: darken(#fff , 20); //顏色變深
+    color: lighten(#000000, 100); //顏色變淺 0 ~ 100
+    background-color: darken(#fff, 20); //顏色變深
 }
 
 $btnColor : rgb(100, 0, 0);
 
 .button {
-   text-align: center;
-   padding: 10px 20px;  
-   color: $btnColor;
-   &:hover {
-   color:  lighten($btnColor, 40)   
-   }
+    text-align: center;
+    padding: 10px 20px;
+    color: $btnColor;
+
+    &:hover {
+        color: lighten($btnColor, 40)
+    }
 }
-
-
-
-
-
-
