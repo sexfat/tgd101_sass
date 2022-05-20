@@ -86,14 +86,32 @@ $btnColor : rgb(100, 0, 0);
 $a : false;
 
 @if $a {
-  .box {
-    width: 100px;
-    content: 'true';
-  }
-}@else {
-   .box {
-     width: 50px;
-     content: 'false';
-   }
+    .box {
+        width: 100px;
+        content: 'true';
+    }
 }
+
+@else {
+    .box {
+        width: 50px;
+        content: 'false';
+    }
+}
+
+// $color : ;
+
+.font {
+    @if $color==black {
+        color: #333;
+    }
+    @else if $color==yellow {
+        color: #fff01d;
+    }
+    @else {
+        color: #fff;
+    }
+}
+
+
 
