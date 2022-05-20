@@ -44,3 +44,13 @@ $attr : margin;
     #{$attr}: 10px // 屬性
 }
 
+/* 運算 注意單位 */
+
+.cal {
+  width:  10px + 10; // 單位
+  height:  10px - 5; // 單位
+  margin:  10 * 10 + px; // 單位
+  font-family: 'Courier New', Courier, monospace;
+  font : (100 / 10) + px; // 字體屬性除法 + ()
+ }
+

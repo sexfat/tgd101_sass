@@ -108,4 +108,13 @@ body {
   background-image: url("images/a1.jpg");
   margin: 10px;
 }
+
+/* 運算 注意單位 */
+.cal {
+  width: 20px;
+  height: 5px;
+  margin: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  font: 10px;
+}
 /*# sourceMappingURL=style.css.map */
