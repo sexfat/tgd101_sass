@@ -1,0 +1,32 @@
+// mixin 函式  == js function
+
+// 函式 沒有帶值
+@mixin fontcenter {
+    // 屬性
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+}
+
+@mixin margin_center {
+    margin: 0 auto;
+    width: 100px;
+    background-color: green;
+}
+
+
+
+//======= 版面控制 =========
+// 如何使用: @include layout(數值)  判斷版型 100 滿版
+// 數值 : 1200px
+// @include layout(100)
+@mixin layout($layouts){
+    @if $layouts==100 {
+        width: 100%;
+    }
+
+    @else {
+        width: $layouts + px;
+        margin: auto;
+    }
+}
