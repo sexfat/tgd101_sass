@@ -157,3 +157,6 @@ h1 {
 
 @include btn('btn_commom', 5px , green , 10px);
 @include btn('btn_large', 15px , rgb(0, 38, 250) , 3px);
+
+@include btn-Outline('default',0.4rem  , rgb(8, 131, 255) );
+@include btn-Outline('secondary',0.4rem  , rgb(87, 87, 87) );
