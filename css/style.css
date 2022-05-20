@@ -252,6 +252,22 @@ h1 {
 .btn_commom:hover {
   background-color: #00e600;
   color: #ff7fff;
-  transform: scale(1.2);
+  transform: scale(1.05);
+}
+
+.btn_large {
+  padding: 15px 45px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #0026fa;
+  color: #ffd905;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.btn_large:hover {
+  background-color: #6179ff;
+  color: #ffd905;
+  transform: scale(1.05);
 }
 /*# sourceMappingURL=style.css.map */
