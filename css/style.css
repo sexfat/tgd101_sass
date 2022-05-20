@@ -366,4 +366,32 @@ h1 {
   background-size: cover;
   object-fit: cover;
 }
+
+.key {
+  background-color: val;
+}
+
+.basic {
+  background-color: #333;
+}
+
+.light {
+  background-color: #eee;
+}
+
+.dark {
+  background-color: #000;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.small {
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */

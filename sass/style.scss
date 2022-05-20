@@ -217,7 +217,7 @@ h1 {
 // @include push(100 , top);
 // @include push(100 , right);
 
-// each
+// @each list
 $list : slide_01 slide_02 slide_03;
 
 @each $var in $list {
@@ -228,3 +228,48 @@ $list : slide_01 slide_02 slide_03;
         object-fit: cover;
     }
 }
+
+
+// @each map
+
+$colorEach : (
+  "key" : val,
+  "basic" : #333,
+  "light" : #eee,
+  "dark" : #000, 
+); // map
+
+@each  $k , $v in $colorEach {
+   .#{$k} {
+     background-color: $v;
+   }
+}
+
+
+$titleSize : (
+  "h1" : 40px,
+  "h2" : 30px,
+  ".small" : 12px
+);
+
+@each $k , $v in $titleSize {
+   #{$k} {
+      font-size: $v;
+   }
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
