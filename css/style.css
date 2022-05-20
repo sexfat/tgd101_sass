@@ -6,30 +6,37 @@
   background-color: #00ddf1;
   color: #fff;
   border-radius: 3px;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
   cursor: pointer;
 }
+
 .btn:hover {
   background-color: #02a8b7;
   transform: scale(1.2);
 }
+
 .btn::after {
-  content: "";
+  content: '';
 }
+
 .btn::before {
-  content: "";
+  content: '';
 }
+
 .btn--dark {
   background-color: #333;
 }
+
 .btn--dark:hover {
   background-color: #666;
 }
+
 .btn--white {
   background-color: #fff;
   border: 1px solid #333;
   color: #333;
 }
+
 .btn--white:hover {
   background-color: #333;
   color: #fff;
@@ -59,10 +66,12 @@ h5 {
   width: 100%;
   background-color: #ddd2d2;
 }
+
 .index .section01 h2 {
   font-size: 34px;
   color: #333;
 }
+
 .index .section01 .area {
   width: 80%;
   background-color: #fe7474;
@@ -72,6 +81,7 @@ h5 {
 .about section {
   width: 100%;
 }
+
 .about section h2 {
   font-size: 40px;
   color: #444;
@@ -98,5 +108,4 @@ body {
   background-image: url("images/a1.jpg");
   margin: 10px;
 }
-
 /*# sourceMappingURL=style.css.map */

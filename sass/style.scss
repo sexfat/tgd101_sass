@@ -1,9 +1,9 @@
 //引入其他檔案
-@import 'var';
-@import 'btn';
-@import 'font';
-@import 'index';
-@import 'about';
+@import 'base/var';
+@import 'component/btn';
+@import 'base/font';
+@import 'page/index';
+@import 'page/about';
 
 
 body {
