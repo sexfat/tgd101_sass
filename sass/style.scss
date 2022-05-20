@@ -3,7 +3,7 @@
 @import 'base/reset';
 @import 'base/font';
 @import 'mixin/mixin';
-@import '../node_modules/bootstrap/scss/bootstrap';
+// @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'component/btn';
 @import 'page/index';
 @import 'page/about';
@@ -140,4 +140,14 @@ $layout :full; // 用字串去控制
 h1 {
     @include fontcenter;
     width: 100px
+}
+
+@mixin rect($w, $h:300px) {
+    width: $w;
+    min-height: $h;
+    @include margin-center();
+}
+
+.box {
+ @include rect(100px , 100px)
 }

@@ -8,10 +8,8 @@
     color: #000000;
 }
 
-@mixin margin_center {
-    margin: 0 auto;
-    width: 100px;
-    background-color: green;
+@mixin margin_center($num:null) {
+    margin: $num auto;
 }
 
 
