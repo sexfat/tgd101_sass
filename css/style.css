@@ -394,4 +394,22 @@ h2 {
 .small {
   font-size: 12px;
 }
+
+@media all and (max-width: 576px) {
+  .aa {
+    content: '手機';
+  }
+}
+
+@media all and (max-width: 996px) {
+  .aa {
+    content: '平板';
+  }
+}
+
+@media all and (max-width: 1920px) {
+  .aa {
+    content: '超大螢幕';
+  }
+}
 /*# sourceMappingURL=style.css.map */

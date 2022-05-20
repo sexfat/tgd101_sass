@@ -232,44 +232,64 @@ $list : slide_01 slide_02 slide_03;
 
 // @each map
 
-$colorEach : (
-  "key" : val,
-  "basic" : #333,
-  "light" : #eee,
-  "dark" : #000, 
+$colorEach : ("key" : val,
+    "basic" : #333,
+    "light" : #eee,
+    "dark" : #000,
 ); // map
 
-@each  $k , $v in $colorEach {
-   .#{$k} {
-     background-color: $v;
-   }
+@each $k,
+$v in $colorEach {
+    .#{$k} {
+        background-color: $v;
+    }
 }
 
 
-$titleSize : (
-  "h1" : 40px,
-  "h2" : 30px,
-  ".small" : 12px
-);
+$titleSize : ("h1" : 40px,
+    "h2" : 30px,
+    ".small" : 12px);
 
-@each $k , $v in $titleSize {
-   #{$k} {
-      font-size: $v;
-   }
+@each $k,
+$v in $titleSize {
+    #{$k} {
+        font-size: $v;
+    }
 }
- 
+
+
+$breakpoint : (
+  'm'  : 576px,
+  't' : 996px,
+  'lx' : 1920px
+);// 斷點 map
 
 
 
+@mixin rwd($res) {
+    @each $v,$num in $breakpoint {
+        @if $res==$v {
+            @media all and (max-width : $num) {
+                @content;
+            }
+        }
+    }
+}
 
+@include rwd(m) {
+  .aa {
+    content: '手機';
+  }
+}
 
+@include rwd(t) {
+  .aa {
+    content: '平板';
+  }
+}
 
-
-
-
-
-
-
-
-
-
+@include rwd(lx) {
+  .aa {
+    content: '超大螢幕';
+  }
+}
