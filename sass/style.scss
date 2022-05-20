@@ -149,5 +149,5 @@ h1 {
 }
 
 .box {
- @include rect(100px , 100px)
+ @include rect(100px , 100px);
 }
