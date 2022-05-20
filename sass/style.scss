@@ -142,12 +142,13 @@ h1 {
     width: 100px
 }
 
-@mixin rect($w, $h:300px) {
+// 預設值 $w , $h 這兩個是區域變數 
+@mixin rect($w, $h:$w) {
     width: $w;
-    min-height: $h;
+    height: $h;
     @include margin-center();
 }
 
 .box {
- @include rect(100px , 100px);
+ @include rect(600px , 400px);
 }

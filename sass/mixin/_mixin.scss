@@ -8,6 +8,7 @@
     color: #000000;
 }
 
+// null初始值
 @mixin margin_center($num:null) {
     margin: $num auto;
 }
@@ -28,3 +29,11 @@
         margin: auto;
     }
 }
+
+// 預設值 $w , $h 這兩個是區域變數 
+@mixin rect($w, $h:$w) {
+    width: $w;
+    height: $h;
+    @include margin-center();
+}
+
