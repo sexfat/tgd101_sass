@@ -138,4 +138,9 @@ body {
 .button:hover {
   color: #ff3131;
 }
+
+.box {
+  width: 50px;
+  content: 'false';
+}
 /*# sourceMappingURL=style.css.map */
