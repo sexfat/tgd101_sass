@@ -98,6 +98,24 @@
     }
 }
 
+// 推元件使用
+// @include push(數值 , 方向)
+@mixin push($num , $dir) {
+    @for $i from 1 through $num {
+        .push#{$dir}_#{$i} {
+            position: relative;
+            #{$dir}: $i * 1px
+        }
+    }
+}
+
+
+
+
+
+
+
+
 
 
 

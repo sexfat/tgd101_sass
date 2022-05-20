@@ -338,4 +338,32 @@ h1 {
     font-size: 40px;
   }
 }
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: #7eff05;
+}
+
+.img_slide_01 {
+  background-image: url("images/slide_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.img_slide_02 {
+  background-image: url("images/slide_02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.img_slide_03 {
+  background-image: url("images/slide_03.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
 /*# sourceMappingURL=style.css.map */
