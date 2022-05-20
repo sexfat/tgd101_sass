@@ -115,7 +115,7 @@ $a : false;
     }
 }
 
-$layout :full;
+$layout :full; // 用字串去控制
 
 .container {
     @if $layout=='full' {
@@ -128,9 +128,10 @@ $layout :full;
     }
 }
 
-$layouts : 100; 
-.container-another {
 
+$layouts : 100; // 用數值去控制
+
+.container-another {
   @if $layouts == 100 {
     width: 100%;
   }@else {
